@@ -1,0 +1,61 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-weight: bolder;
+    padding-top: 10%;
+}
+
+#frame {
+    border: .4em solid rgb(0, 0, 0);
+    padding: 2%;
+    margin-top: 3%;
+    height: 25em;
+    width: 60em;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#search-container {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-container  input{
+    height: 100%;
+}
+
+#search-container  #btn-submit{
+    position: relative;
+    bottom: 6.5%;
+}
+
+#alert-learn-more {
+    margin: 10%;
+    width: 50%;
+}
+
+#login-form {
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#login-form button{
+    margin-top: 10%;
+}
+
+#login-form input{
+    font-size: larger;
+    padding: 0%;
+    padding-left: 2%;
+}

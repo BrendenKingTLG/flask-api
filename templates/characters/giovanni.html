@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+
+<pre id="myText" ></pre>
+
+  <script>
+    const data = { 
+        "name": "Giovanni", 
+        "strength": 750,
+        "occupation": "Software Engineer",
+        "Alias": ["The Linux Legend", "time-keeper"]
+    };
+
+    document.getElementById("myText").innerHTML = JSON.stringify(data, null, 4);
+    
+  </script>
+
+{% endblock %}
