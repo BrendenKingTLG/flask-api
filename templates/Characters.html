@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% block main %}
+
 <pre id="myText" style="word-wrap: break-word; white-space: pre-wrap;"></pre>
 <!-- test -->
   <script>
@@ -119,3 +122,5 @@
     document.getElementById("myText").innerHTML = JSON.stringify(data);
     
   </script>
+
+  {% endblock %}
