@@ -86,9 +86,9 @@ def generic(name):
         return "That character does not exist"
 
 
-@app.route("/how-to")
+@app.route("/guide")
 def how_to():
-    return render_template("how-to.html")
+    return render_template("guide.html")
 
 
 # custom 404
