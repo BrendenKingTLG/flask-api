@@ -9,7 +9,7 @@ searchForm.addEventListener('submit', (e) =>{
     const frame = document.getElementById("frame");
     const newChar = document.createElement("iframe");
 
-    frame.innerHTML = "";
+    frame.innerText = "";
     newChar.setAttribute("src", character);
     frame.appendChild(newChar);
 

@@ -15,6 +15,8 @@ def setcookie():
 @app.route('/profile')
 def profile():
     userName = request.cookies.get('username')  
+    if userName == None or userName == "":
+        return make_response(render_template("error.html"))
     return render_template('profile.html', name=userName)
 
 @app.route('/')
