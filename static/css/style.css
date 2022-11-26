@@ -59,3 +59,33 @@ iframe {
     padding: 0%;
     padding-left: 2%;
 }
+
+#title-how-to {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#table-requests {
+    margin: 10%;
+    width: 50%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+#table-requests table{
+    background-color: white;
+}
+
+#info-upcoming {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#alert-home {
+    margin: 10%;
+    width: 50%;
+}

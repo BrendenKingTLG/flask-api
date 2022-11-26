@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block main %}
+<style>
+  body{background-color: #e4e4e7;
+};
+</style>
+<div class="container">
+    <div class="row">
+        <div id="title-how-to">
+            <h1 id="title" class="text-center">API Request:</h1>
+            <h1>How-to-Guide</h1>
+        </div>
+
+        <div id="table-requests">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Request Type</th>
+                    <th scope="col">Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>All Characters</td>
+                    <td>[URL]/characters/</td>
+                  </tr>
+                  <tr>
+                    <td>One Character</td>
+                    <td>[URL]/characters/brenden</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+          <div id="info-upcoming">
+              <h3>Support for requests with muiltiple characters coming<span class="badge bg-secondary"> 02/10/2023</span></h3>
+          </div>
+
+          <div id="alert-home">
+              <div id="alert-text" class="alert alert-primary text-center" role="alert">
+                Want to see what you data will look like after a request? click <a href="/home" class="alert-link">here</a>
+              </div>
+          </div>
+    </div>
+</div>
+{% endblock %}
