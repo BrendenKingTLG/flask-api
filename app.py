@@ -70,14 +70,9 @@ characters = [
     "Winton",
     "Xiuxiang",
     "Yaping",
-    "Chad"
+    "Chad",
+    "all"
 ]
-
-
-# route for all characters
-@app.route("/characters/")
-def all():
-    return render_template("characters.html")
 
 
 # route to approprate character page
