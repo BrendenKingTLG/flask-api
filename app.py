@@ -49,6 +49,7 @@ def login():
 
 # list storing current characters
 characters = [
+    "Albert",
     "Anthony",
     "Brenden",
     "Craig",
@@ -76,7 +77,7 @@ characters = [
 # route for all characters
 @app.route("/characters/")
 def all():
-    return render_template("/characters.html")
+    return render_template("characters.html")
 
 
 # route to approprate character page
