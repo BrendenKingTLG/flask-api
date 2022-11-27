@@ -31,14 +31,15 @@ def setcookie():
 
 # home page
 @app.route('/home')
-def profile():
-    userName = request.cookies.get('username')  
+def profile(): 
     # username validation
     print(USER_VALIDATION)
-    if USER_VALIDATION == False:
-        return make_response(render_template("error.html"))
-    else:
+    if USER_VALIDATION == True or request.cookies.get('username'):
+        userName = request.cookies.get('username') 
         return render_template('home.html', name=userName)
+    else:
+        return make_response(render_template("error.html"))
+        
 
 
 #login page 
