@@ -63,7 +63,7 @@ characters = [
     "Mohamed",
     "PJ",
     "Philip",
-    "Sagan",
+    "Segan",
     "Suchit",
     "Mieka",
     "Trey",
