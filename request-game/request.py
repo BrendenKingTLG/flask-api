@@ -3,17 +3,20 @@ import random
 import os
 import time
 
+#init score and store names and aliases
 score = 0
 char_and_alias_dict = {}
 res_all = requests.get(f"https://the-best-cohort.herokuapp.com/characters/all").json()
 for character in res_all:
         char_and_alias_dict.update({character["name"]: character["Alias"]})
 
+#welcome message
 def welcome():
     print("welcome to the alias guessing game to win you need to answer correctly three times in a row")
     time.sleep(3)
+    clear()
 
-
+#storage for incorrect aliases
 incorrect_aliases = [
     "3D Waffle",
     "Papa Smurf",
@@ -52,6 +55,8 @@ incorrect_aliases = [
     "Waldorf"
 ]
 
+
+#get random person
 def get_random_char():
     char_list = list(char_and_alias_dict.keys())
     rand_num = random.randint(0, len(char_list) - 1)
@@ -59,6 +64,8 @@ def get_random_char():
     alias = char_and_alias_dict.get(rand_char)
     return rand_char, alias
 
+
+#ask questions
 def ask_question():
     name, alias = get_random_char()
     incorrect_1 = incorrect_aliases[random.randint(0, len(incorrect_aliases) - 1)]
@@ -81,9 +88,13 @@ def ask_question():
     print(correct_ans)
     time.sleep(2)
 
+        
+#clear screen
 def clear():
     os.system("clear")
 
+
+#start game
 def menu():
     welcome()
     ask_question()
@@ -99,5 +110,5 @@ def menu():
     else:
         print("wow .. you didnt do very well. Thanks for playing.")
 
-clear()
+
 menu()
