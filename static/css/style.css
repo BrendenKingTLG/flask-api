@@ -3,6 +3,28 @@
     justify-content: center;
 }
 
+.container {
+    margin-top: 5%;
+}
+
+#success-home a{
+    color: #fff;
+    font-size: large;
+    font-weight: 500;
+}
+
+#success-home a:visited{
+    color: #fff;
+}
+
+button, #btn-submit {
+    background-color: rgb(0, 255, 13);
+    border-color: rgb(0, 255, 13);
+    font-weight: 900;
+    font-size: larger;
+    color: #111;
+}
+
 #title {
     font-weight: bolder;
     /* padding-top: 10%; */
@@ -26,32 +48,36 @@ iframe {
 
 #search-container {
     margin: 5%;
+}
+#search-form {
     display: flex;
     justify-content: center;
 }
 
-#search-container  input{
-    height: 100%;
-}
-
 #search-container  #btn-submit{
     position: relative;
-    bottom: 6.5%;
+    bottom: .09em;
 }
 
-#alert-learn-more {
-    margin: 5%;
+#search-home {
     width: 50%;
+    height: 2.5em;
+    margin-right: .5em;
 }
 
 #login-form {
-    padding-top: 30%;
+    padding-top: 20%;
     display: flex;
     justify-content: center;
 }
 
 #login-form button{
     margin-top: 10%;
+    background: rgb(0, 255, 13);
+    border-color: rgb(0, 255, 13);
+    font-size: x-large;
+    font-weight: 800;
+    color: #111;
 }
 
 #login-form input{
@@ -88,4 +114,23 @@ iframe {
 #alert-home {
     margin: 5%;
     width: 50%;
+}
+
+#header-nav {
+    color: #fff;
+    font-size: x-large;
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+#header-nav ul li a{
+    color: #fff;
+    font-size: x-large;
+}
+
+#header-nav ul li a:hover{
+    color: rgb(0, 255, 13);
+}
+
+#header-nav ul li a:active{
+    color: rgb(0, 255, 13);
 }

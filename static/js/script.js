@@ -1,20 +1,20 @@
-const searchForm = document.getElementById("search-form")
+const searchForm = document.getElementById("search-form");
 
+if (searchForm){
 searchForm.addEventListener('submit', (e) =>{
     e.preventDefault();
-    const fd = new FormData(searchForm);
-    const obj = Object.fromEntries(fd);
-    search = obj.search.toLowerCase();
+    let search = document.getElementById("search-home").value;
     if (search == "") {
         search = "all"
     }
     let character = "/characters/" + search;
 
     const frame = document.getElementById("frame");
-    const newChar = document.createElement("iframe");
+    let newChar = document.createElement("iframe");
 
     frame.innerText = "";
     newChar.setAttribute("src", character);
     frame.appendChild(newChar);
 
 })
+}
