@@ -3,7 +3,7 @@ const searchForm = document.getElementById("search-form");
 if (searchForm){
 searchForm.addEventListener('submit', (e) =>{
     e.preventDefault();
-    let search = document.getElementById("search-home").value;
+    let search = document.getElementById("search-home").value.tLowerCase();
     if (search == "") {
         search = "all"
     }
