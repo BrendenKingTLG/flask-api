@@ -86,7 +86,7 @@ def generic(name):
     else:
         return "That character does not exist"
 
-
+#api guide
 @app.route("/guide")
 def how_to():
     return render_template("guide.html")
