@@ -4,4 +4,4 @@ to run app:
 python app.py
 
 to run game:
-python requests\request-game.py
+python request-game\request.py
