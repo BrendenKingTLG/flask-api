@@ -1,51 +1,85 @@
 {% extends "base.html" %}
 {% block main %}
-<style>body {
-  background-color: #212529;
-  color: #fff;
-}</style>
-  <header>
-    <nav id="header-nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/guide">Guide</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<style>
+  body {
+    background-color: #212529;
+    color: #fff;
+  }
+</style>
+<header>
+  <nav id="header-nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/guide">Guide</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <div class="container">
-    <div class="row">
-        <div id="title-how-to">
-            <h1 id="title" class="text-center">API Request:</h1>
-            <h1>How-to-Guide</h1>
-        </div>
-
-        <div id="table-requests">
-            <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Request Type</th>
-                    <th scope="col">Example</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>All Characters</td>
-                    <td>[URL]/characters/all</td>
-                  </tr>
-                  <tr>
-                    <td>One Character</td>
-                    <td>[URL]/characters/brenden</td>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
+  <div class="row">
+    <div id="title-how-to">
+      <h1 id="title" class="text-center">API Request:</h1>
+      <h1>How-to-Guide</h1>
     </div>
+
+    <div id="table-requests">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Request Type</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>All Characters</td>
+            <td>[URL]/characters/all</td>
+          </tr>
+          <tr>
+            <td>One Character</td>
+            <td>[URL]/characters/brenden</td>
+          </tr>
+          <!-- List of Characters -->
+          <tr>
+            <td>Characters List</td>
+            <td>
+              <ul>
+                <li>Albert</li>
+                <li>Anthony</li>
+                <li>Brenden</li>
+                <li>Craig</li>
+                <li>Deja</li>
+                <li>Elihu</li>
+                <li>Eric</li>
+                <li>Giovanni</li>
+                <li>James</li>
+                <li>Joshua</li>
+                <li>Maria</li>
+                <li>Mohamed</li>
+                <li>PJ</li>
+                <li>Philip</li>
+                <li>Segan</li>
+                <li>Suchit</li>
+                <li>Mieka</li>
+                <li>Trey</li>
+                <li>Winton</li>
+                <li>Xiuxiang</li>
+                <li>Yaping</li>
+                <li>Chad</li>
+                <li>all</li>
+              </ul>
+            </td>
+          </tr>
+          <!-- End of Characters List -->
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 {% endblock %}
